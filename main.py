@@ -8,21 +8,32 @@
 
 #TODO (Althea)
 # Lucky Number Generator (uses `random` and `numpy` modules)
-# ├── lucky_number.py
+# ├── aragon.py
 #TODO (Adriel Joseph)
 # Quote Generator (uses `quote` module to get quotes)
-# ├── quote_generator.py
+# ├── dimayuga.py
 #TODO (Rain)
-# Adds time (uses `datetime` module)
-# ├── generate_time.py
+# Time and Quote
+# ├── romero.py
 #TODO (Grace)
-# Fetches the weekday (uses `calendar` and `datetime` modules)
-# ├── weekday.py
+# Quote of the Day
+# ├── lim.py
 #TODO (Hoshea)
-# Calculates the square root of the lucky number (uses `math` module)
-# └── sqrt_calculator.py
+# lucky charm generator
+# └── lopez.py
 
 # Do not forget to enable virtual environment
 # Place the modules inside the packages folder
 # Make sure to use your surname as the name of the module (dimayuga.py)
 # Follow coding guidelines :>
+
+# Sample Output:
+# Your journey today is guided by the lucky number 42. (Althea)
+# Let this thought carry you through the day:
+# "Success is not final, failure is not fatal: 
+# it is the courage to continue that counts." (Grace)
+# As time quietly reminds you, "Every moment is a fresh beginning." (Rain)
+# Hold on to your own words: "Keep moving forward, no matter how slow the pace" 
+# — they’re yours for a reason. (Adriel Joseph)
+# And finally, keep a silver coin tucked in your pocket close. (Hoshea)
+# You never know when luck will smile your way.
