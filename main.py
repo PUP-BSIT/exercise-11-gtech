@@ -1,8 +1,10 @@
 from packages.romero import get_current_time
 from packages.lim import display_weekday
+from packages.aragon import generate_number
 
 print(get_current_time())
 print(display_weekday())
+print(generate_number())
 
 
 
