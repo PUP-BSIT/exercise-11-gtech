@@ -20,9 +20,7 @@ print("Message:", message)
 #TODO (Adriel Joseph)
 # Quote Generator (uses `quote` module to get quotes)
 # ├── dimayuga.py
-#TODO (Rain)
-# Time and Quote
-# ├── romero.py
+
 #TODO (Grace)
 # Quote of the Day
 # ├── lim.py
