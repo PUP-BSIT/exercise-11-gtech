@@ -1,11 +1,9 @@
-import datetime  
+import pendulum
 
-def get_current_time():    
-    # Get the current local time (as a time object)
-    current_time = datetime.datetime.now().time()
-    
-    # Extract the hour component from the current time
-    hour = current_time.hour
+def get_current_time():
+    # Get the current local time using Pendulum
+    now = pendulum.now()
+    hour = now.hour
 
     # Determine the message based on the current hour
     if 1 <= hour < 12:
@@ -17,7 +15,7 @@ def get_current_time():
     else:
         message = "Good night! Patience is your virtue at this hour."
 
-    # Return the current time (as a time object)
-    time_message = (f"The current time is: {current_time}\n\n{message}")
+    # Format the time in a friendly string
+    time_message = f"The current time is: {now.format('HH:mm:ss')}\n\n{message}"
     
     return time_message
