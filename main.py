@@ -4,7 +4,6 @@ from rich.console import Console
 from rich.panel import Panel 
 from rich.align import Align
 from rich import box
-import random
 
 # Initialize a Console object to enable rich, styled output to terminal
 console = Console()
