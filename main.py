@@ -1,10 +1,13 @@
 from packages.romero import get_current_time
 from packages.lim import display_weekday
 from packages.aragon import generate_number
+from packages.lopez import lucky_charm
 
-print(get_current_time())
-print(display_weekday())
+
 print(generate_number())
+print(display_weekday())
+print(get_current_time())
+print(lucky_charm())
 
 
 
