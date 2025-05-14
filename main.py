@@ -4,6 +4,7 @@ from rich.console import Console
 from rich.panel import Panel 
 from rich.align import Align
 from rich import box
+import random
 
 # Initialize a Console object to enable rich, styled output to terminal
 console = Console()
@@ -25,7 +26,7 @@ lucky_message = (
                 f"{aragon.generate_number()}"
                 f"{lopez.lucky_charm()}"
                 "\n\n"
-                f"{dimayuga.generate_quote()}"
+                f"{dimayuga.random_message()}"
                 )
 
 # Display the final generated message in a styled panel 
