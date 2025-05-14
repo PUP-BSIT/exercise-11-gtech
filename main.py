@@ -1,3 +1,11 @@
+from packages.romero import get_current_time  # adjust import if needed
+
+message, current_time = get_current_time()  # call the function
+print("Current time is:", current_time)  # format time nicely
+print("Message:", message)
+
+
+
 #TODO (everyone): from each of your module, add atleast 1 function
 
 # System: Lucky Calendar & Quote Generator
