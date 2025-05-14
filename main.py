@@ -1,6 +1,8 @@
 from packages.romero import get_current_time
+from packages.lim import display_weekday
 
 print(get_current_time())
+print(display_weekday())
 
 
 
@@ -19,10 +21,6 @@ print(get_current_time())
 #TODO (Adriel Joseph)
 # Quote Generator (uses `quote` module to get quotes)
 # ├── dimayuga.py
-
-#TODO (Grace)
-# Quote of the Day
-# ├── lim.py
 #TODO (Hoshea)
 # lucky charm generator
 # └── lopez.py
