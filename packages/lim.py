@@ -1,12 +1,10 @@
-import calendar
-import datetime
+import arrow
 
 # Returns an inspirational message based on the current weekday
 def display_weekday():
-    current_date_time = datetime.datetime.now()
-    current_weekday = calendar.day_name[current_date_time.weekday()]
+    # Get the current weekday name using Arrow
+    current_weekday = arrow.now().format('dddd')  # e.g., "Monday"
 
-    # Weekday-message mapping
     weekday_messages = {
         "Monday": "a fresh start begins with endless possibilities.",
         "Tuesday": "your effort today will yield results.",
