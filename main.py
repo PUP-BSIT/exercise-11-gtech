@@ -1,47 +1,25 @@
-from packages.romero import get_current_time
-from packages.lim import display_weekday
-from packages.aragon import generate_number
-from packages.lopez import lucky_charm
+# Import custom modules from the packages and rich library for styled output
+from packages import aragon, dimayuga, lim, lopez, romero
+from rich.console import Console
+from rich.panel import Panel 
+from rich import box 
 
+# Initialize a Console object to enable rich, styled output to terminal
+console = Console()
 
-print(generate_number())
-print(display_weekday())
-print(get_current_time())
-print(lucky_charm())
+# Display the welcome message as the program title 
+console.print(f"\n\t\t\t\t\t[bold magenta]Welcome to CharMeter!"
+              f" Ready to discover your luck today?[/bold magenta]")
+# Prompt the user to input their name and display their name with styled text
+user_name = input("Enter your name: ")
+console.print(f"\n[bold magenta]Hello, {user_name}!"
+              f" Here's your CharMeter reading:[/bold magenta]\n")
 
+# Generate the full message from functions in the imported modules 
+lucky_message = (f"{romero.get_current_time()} {lim.display_weekday()}"
+                 f"{aragon.generate_number()} {lopez.lucky_charm()}"
+                 f"\n\n{dimayuga.generate_quote()}")
 
-
-
-#TODO (everyone): from each of your module, add atleast 1 function
-
-# System: Lucky Calendar & Quote Generator
-
-# lucky_calendar_quote_generator/
-# Entry point for generating the lucky number and quote
-# ├── main.py
-
-#TODO (Althea)
-# Lucky Number Generator (uses `random` and `numpy` modules)
-# ├── aragon.py
-#TODO (Adriel Joseph)
-# Quote Generator (uses `quote` module to get quotes)
-# ├── dimayuga.py
-#TODO (Hoshea)
-# lucky charm generator
-# └── lopez.py
-
-# Do not forget to enable virtual environment
-# Place the modules inside the packages folder
-# Make sure to use your surname as the name of the module (dimayuga.py)
-# Follow coding guidelines :>
-
-# Sample Output:
-# Your journey today is guided by the lucky number 42. (Althea)
-# Let this thought carry you through the day:
-# "Success is not final, failure is not fatal: 
-# it is the courage to continue that counts." (Grace)
-# As time quietly reminds you, "Every moment is a fresh beginning." (Rain)
-# Hold on to your own words: "Keep moving forward, no matter how slow the pace" 
-# — they’re yours for a reason. (Adriel Joseph)
-# And finally, keep a silver coin tucked in your pocket close. (Hoshea)
-# You never know when luck will smile your way.
+# Display the final generated message in a styled panel 
+console.print(Panel(lucky_message, title="CharMeter Message", 
+                    box=box.DOUBLE_EDGE, expand=True))
