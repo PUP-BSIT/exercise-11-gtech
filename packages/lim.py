@@ -15,8 +15,9 @@ def display_weekday():
         "Sunday": "reflect and recharge, great things lie ahead.",
     }
 
+    # Retrieve the message for the current weekday
     message = weekday_messages.get(current_weekday, "Have a great day!")
-    daily_message = (f"As it is {current_weekday}, let this thought carry you"
+    daily_message = (f" As it is {current_weekday}, let this thought carry you"
                      f" through the day, {message}")
 
     return daily_message
