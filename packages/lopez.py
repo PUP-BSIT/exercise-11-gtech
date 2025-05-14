@@ -1,4 +1,4 @@
-import random 
+import random2
 from rich import print
 
 def lucky_charm():
@@ -14,7 +14,7 @@ def lucky_charm():
     }
 
     # Randomly select a charm from the dictionary keys
-    charm = random.choice(list(charms))
+    charm = random2.choice(list(charms))
 
     # Construct the daily charm message
     daily_charm = (f" Today's charm is {charm}, {charms[charm]}")
