@@ -18,5 +18,6 @@ def get_current_time():
         message = "Good night! Patience is your virtue at this hour."
 
     # Return the current time (as a time object)
-
-    return message, current_time
+    time_message = (f"The current time is: {current_time}\n\n{message}")
+    
+    return time_message

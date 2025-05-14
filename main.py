@@ -1,8 +1,7 @@
-from packages.romero import get_current_time  # adjust import if needed
+from packages.romero import get_current_time
 
-message, current_time = get_current_time()  # call the function
-print("Current time is:", current_time)  # format time nicely
-print("Message:", message)
+print(get_current_time())
+
 
 
 
